@@ -10,7 +10,7 @@ $("#search-btnn").click(function () {
 
 function theResponse(response) {
   $("#city-name").html(response.name);
-  $("#icon").attr("src", "http://openweathermap.org/img/w/" + response.weather[0].icon + ".png");
+  $("#cloud-img").attr("src", "http://openweathermap.org/img/w/" + response.weather[0].icon + ".png");
   $("#temp").html((response.main.temp - 273).toFixed(1) + "°");
   $("#humidity-div").html(response.main.humidity + "%");
   $("#status").html(response.weather[0].description);
